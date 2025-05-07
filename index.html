@@ -3,85 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sven // CyberDev</title>
   <link rel="stylesheet" href="css/style.css" />
+  <title>Sven | CyberDev Portfolio</title>
 </head>
 <body>
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-overlay">
-      <div class="hero-content">
-        <h1>Sven // CyberDev</h1>
-        <p>17 y/o Developer · Cybersecurity Enthusiast · Fast Learner</p>
-      </div>
+  <header class="hero">
+    <div class="hero-content">
+      <img src="assets/profile.jpg" alt="Sven" class="hero-img">
+      <h1 class="hero-title">Hey, I'm Sven.</h1>
+      <p class="hero-subtitle">17 y/o Software Developer & Cybersecurity Enthusiast</p>
     </div>
-  </section>
+  </header>
 
-  <!-- About Me -->
-  <section class="main-box">
-    <div class="content-section">
-      <h2>🧠 About Me</h2>
-      <p>I'm Sven, a 17-year-old software development student with a deep interest in cybersecurity, reverse engineering, and everything tech. I love learning fast, building tools, and figuring out how things work under the hood.</p>
-    </div>
+  <main class="main-content">
+    <section class="about-me section">
+      <h2>About Me</h2>
+      <p>I’m passionate about creating and breaking software — reverse engineering is my playground.</p>
+      <p>Fast learner, cyber-curious, and always hacking away at something new.</p>
+    </section>
 
-    <!-- Skills / Interests -->
-    <div class="content-section">
-      <h2>💡 What I Love</h2>
-      <div class="flex-cards">
+    <section class="projects section">
+      <h2>Featured Projects</h2>
+      <div class="card-grid">
         <div class="card">
-          <h3>🔐 Cybersecurity</h3>
-          <p>Passionate about pen-testing, ethical hacking, and system hardening.</p>
+          <h3>🔐 PenTest Toolkit</h3>
+          <p>Recon & vuln scanning tools in Python/Bash.</p>
         </div>
         <div class="card">
-          <h3>💻 Software Dev</h3>
-          <p>Creating tools, websites, and full-stack apps using JS, PHP & Python.</p>
+          <h3>🖥️ Portfolio Generator</h3>
+          <p>React-based site generator with themes.</p>
         </div>
         <div class="card">
-          <h3>🧩 Reverse Engineering</h3>
-          <p>I enjoy breaking binaries, debugging, and understanding inner logic.</p>
+          <h3>💾 FileCrypt</h3>
+          <p>PHP/JS AES-based browser file encryption tool.</p>
         </div>
         <div class="card">
-          <h3>🚀 Learning Fast</h3>
-          <p>I dive deep and move fast — always hungry to learn more.</p>
+          <h3>⚙️ Reverse Playground</h3>
+          <p>Collection of binaries & crackmes I analyzed.</p>
         </div>
       </div>
-    </div>
+    </section>
+  </main>
 
-    <!-- Projects -->
-    <div class="content-section">
-      <h2>📁 Projects</h2>
-      <div class="project-grid">
-
-        <div class="project-card">
-          <img src="img/project1.png" alt="Project Screenshot">
-          <h3>FileCrypt Web Tool</h3>
-          <p>A PHP/JS app to encrypt/decrypt files directly in-browser with AES.</p>
-          <code>crypt.js + PHP handler</code>
-        </div>
-
-        <div class="project-card">
-          <img src="img/project2.png" alt="Project Screenshot">
-          <h3>PenTest Toolkit</h3>
-          <p>Automation for recon, vuln scanning, and local info gathering.</p>
-          <code>bash recon.sh && python3 scan.py</code>
-        </div>
-
-        <div class="project-card">
-          <img src="img/project3.png" alt="Project Screenshot">
-          <h3>React Portfolio Generator</h3>
-          <p>JSON-configurable portfolio site builder for devs.</p>
-          <code>npm start && edit config.json</code>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer class="footer">
-    <p>Created by Sven // CyberDev | <a href="#">GitHub</a> | <a href="#">Contact</a></p>
+    <p>Built with 💻 by Sven | <a href="#">GitHub</a> | <a href="#">Contact</a></p>
   </footer>
-
 </body>
 </html>
