@@ -3,72 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css">
-  <title>Sven // CyberDev Portfolio</title>
+  <title>Sven // CyberDev</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- Mouse Followers -->
-  <div class="cursor-dot" id="cursorDot"></div>
-  <div class="cursor-outline" id="cursorOutline"></div>
-
-  <!-- Main Container -->
-  <div class="container" id="mainContainer">
-
-    <!-- Header -->
-    <header class="header">
-      <h1>&lt;SvenDev /&gt;</h1>
-      <p>17 y/o Software Developer | Cybersecurity Learner | Reverse Engineering Fan</p>
-    </header>
-
-    <!-- About Section -->
-    <section class="projects">
-      <div class="card">
-        <h2>📌 About Me</h2>
-        <p>Hey, I'm Sven. A 17-year-old software development student obsessed with technology, cybersecurity, and everything in between.</p>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Sven // CyberDev</h1>
+        <p>17 y/o Developer · Cybersecurity Enthusiast · Fast Learner</p>
       </div>
-      <div class="card">
-        <h2>💡 Passion for Learning</h2>
-        <p>I'm a fast learner, always hungry for new knowledge. From zero to deep dive in record time — that's how I roll.</p>
-      </div>
-      <div class="card">
-        <h2>🛠️ Creator & Breaker</h2>
-        <p>I love building software — but I also love taking it apart. Reverse engineering is my playground.</p>
-      </div>
-      <div class="card">
-        <h2>🔒 Cyber Curiosity</h2>
-        <p>Cybersecurity isn't just a subject — it's a mindset. I explore vulnerabilities, study exploits, and respect ethical hacking.</p>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Spacer -->
-    <div class="spacer"></div>
+  <!-- About Me -->
+  <section class="main-box">
+    <div class="content-section">
+      <h2>🧠 About Me</h2>
+      <p>I'm Sven, a 17-year-old software development student with a deep interest in cybersecurity, reverse engineering, and everything tech. I love learning fast, building tools, and figuring out how things work under the hood.</p>
+    </div>
 
-    <!-- Previous Projects Section -->
-    <section class="projects-section">
-      <h2 class="section-title">🧪 Previous Projects</h2>
-
-      <div class="project-entry">
-        <img src="img/sample-project.png" alt="Project Screenshot">
-        <div class="project-info">
-          <h3>Reverse Proxy Analyzer</h3>
-          <p>Custom-built reverse proxy logger that inspects HTTP/S payloads and headers for pen-testing environments.</p>
-          <pre><code class="language-bash">
-# Sample setup
-python3 reverse_proxy.py --port 8080 --log-output logs/
-          </code></pre>
+    <!-- Skills / Interests -->
+    <div class="content-section">
+      <h2>💡 What I Love</h2>
+      <div class="flex-cards">
+        <div class="card">
+          <h3>🔐 Cybersecurity</h3>
+          <p>Passionate about pen-testing, ethical hacking, and system hardening.</p>
+        </div>
+        <div class="card">
+          <h3>💻 Software Dev</h3>
+          <p>Creating tools, websites, and full-stack apps using JS, PHP & Python.</p>
+        </div>
+        <div class="card">
+          <h3>🧩 Reverse Engineering</h3>
+          <p>I enjoy breaking binaries, debugging, and understanding inner logic.</p>
+        </div>
+        <div class="card">
+          <h3>🚀 Learning Fast</h3>
+          <p>I dive deep and move fast — always hungry to learn more.</p>
         </div>
       </div>
+    </div>
 
-      <!-- You can copy this project-entry block for more -->
-    </section>
+    <!-- Projects -->
+    <div class="content-section">
+      <h2>📁 Projects</h2>
+      <div class="project-grid">
 
-    <!-- Footer -->
-    <footer class="footer">
-      <p>Made by Sven | <a href="#">GitHub</a> | <a href="#">LinkedIn</a> | <a href="#">Contact</a></p>
-    </footer>
-  </div>
+        <div class="project-card">
+          <img src="img/project1.png" alt="Project Screenshot">
+          <h3>FileCrypt Web Tool</h3>
+          <p>A PHP/JS app to encrypt/decrypt files directly in-browser with AES.</p>
+          <code>crypt.js + PHP handler</code>
+        </div>
 
-  <script src="js/main.js"></script>
+        <div class="project-card">
+          <img src="img/project2.png" alt="Project Screenshot">
+          <h3>PenTest Toolkit</h3>
+          <p>Automation for recon, vuln scanning, and local info gathering.</p>
+          <code>bash recon.sh && python3 scan.py</code>
+        </div>
+
+        <div class="project-card">
+          <img src="img/project3.png" alt="Project Screenshot">
+          <h3>React Portfolio Generator</h3>
+          <p>JSON-configurable portfolio site builder for devs.</p>
+          <code>npm start && edit config.json</code>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Created by Sven // CyberDev | <a href="#">GitHub</a> | <a href="#">Contact</a></p>
+  </footer>
+
 </body>
 </html>
