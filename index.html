@@ -4,8 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js"></script>
-  <title>Sven Braad - CyberDev Portfolio</title>
+  <title>Sven // CyberDev Portfolio</title>
 </head>
 <body>
 
@@ -13,7 +12,7 @@
   <div class="cursor-dot" id="cursorDot"></div>
   <div class="cursor-outline" id="cursorOutline"></div>
 
-  <!-- Main 3D Container -->
+  <!-- Main Container -->
   <div class="container" id="mainContainer">
 
     <!-- Header -->
@@ -42,11 +41,34 @@
       </div>
     </section>
 
+    <!-- Spacer -->
+    <div class="spacer"></div>
+
+    <!-- Previous Projects Section -->
+    <section class="projects-section">
+      <h2 class="section-title">🧪 Previous Projects</h2>
+
+      <div class="project-entry">
+        <img src="img/sample-project.png" alt="Project Screenshot">
+        <div class="project-info">
+          <h3>Reverse Proxy Analyzer</h3>
+          <p>Custom-built reverse proxy logger that inspects HTTP/S payloads and headers for pen-testing environments.</p>
+          <pre><code class="language-bash">
+# Sample setup
+python3 reverse_proxy.py --port 8080 --log-output logs/
+          </code></pre>
+        </div>
+      </div>
+
+      <!-- You can copy this project-entry block for more -->
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
       <p>Made by Sven | <a href="#">GitHub</a> | <a href="#">LinkedIn</a> | <a href="#">Contact</a></p>
     </footer>
-    
   </div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
